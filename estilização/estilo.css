@@ -521,3 +521,87 @@ b{
 .controle-icones{
     color: var(--cor-preta);
 }
+
+.container-contact{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.container-contact h2{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: var(--cor-preta);
+    font-size: 40px;
+}
+
+.box-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-contact h3{
+    font-size: 35px;
+    color: var(--cor-principal);
+}
+
+.box-contact h4{
+    color: var(--cor-preta);
+}
+
+.container-comunicação{
+    display: flex;
+    justify-content:space-between;
+    width: 95%;
+    align-items: center;
+    text-align: center;
+} 
+
+.container-comunicação i{
+    color: var(--cor-principal);
+}
+
+.container-comunicação h5,p{
+    color: var(--cor-preta);
+}
+
+form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    gap: 10px;
+}
+
+form h3{
+    font-size: 35px;
+    color: var(--cor-principal);
+}
+
+.box-input{
+    display: flex;
+    width: 102%;
+    gap: 80px;
+    justify-content: space-between;
+
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+input:active{
+    border: none;
+}
+
+#textoArea{
+    height: 100px;
+    
+}

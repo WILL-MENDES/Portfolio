@@ -220,11 +220,17 @@ function sol(){
 
 function ativaPalheta(){
 
-  $("#palheta").removeClass("none").addClass("flex");
+  $("#palheta").removeClass("none").addClass("flex").addClass("animate__bounceIn");
 
   document.addEventListener("dblclick", function(){
 
-    $("#palheta").removeClass("flex").addClass("none");
+    $("#palheta").removeClass("animate__bounceIn").addClass("animate__hinge")
+
+    setTimeout(function(){
+      $("#palheta").removeClass("flex").removeClass("animate__hinge").addClass("none");
+    },2000)
+
+    
   })
 
 };
