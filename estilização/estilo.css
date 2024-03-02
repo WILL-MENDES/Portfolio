@@ -23,6 +23,11 @@ body{
 
 /* Classes manipuladas por js */
 
+.selecionado{
+    color: var(--cor-principal);
+  
+}
+
 .flex{
     display: flex !important;
 }
@@ -307,7 +312,7 @@ b{
     gap: 20px;
 }
 
-.botoes-about button{
+.botoes-about a{
     background-color: var(--cor-principal);
     color: var(--cor-branca);
     font-size: 14px;
@@ -315,9 +320,10 @@ b{
     padding: 10px 20px 10px 20px;
     overflow: hidden;
     border: 1px solid;
+    text-decoration: none;
 }
 
-.botoes-about button:hover{
+.botoes-about a:hover{
     background-color: var(--cor-branca);
     color: var(--cor-principal);
     border: 1px solid var(--cor-principal);
@@ -326,30 +332,21 @@ b{
 .container-about-direito{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     width: 50%;
     gap: 30px;
 }
 
-.titulo-skills-about{
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-between;
-    width: 100%;
+.fundo-redondo{
+    width: 200px;
+    height: 200px;
 }
 
-.progress{
-    width: 400px;
-    height: 10px;
-    background-color: var(--cor-cinza);
+.fundo-redondo img{
+    max-width: 400px;
+    max-height: 250px;
     border-radius: 20px;
-}
-
-.progress-linha{
-    background-color: var(--cor-principal);
-    height: 10px;
-    border-radius: 20px;
-   
+    border: var(--cor-principal) solid 2px;
 }
 
 .container-skills{
@@ -514,7 +511,7 @@ b{
 .container-controle{
     margin-top: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 95%;
 }
 
@@ -539,6 +536,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -553,8 +551,8 @@ width: 100%;
 
 .container-comunicação{
     display: flex;
-    justify-content:space-between;
-    width: 95%;
+    justify-content:space-around;
+    width: 100%;
     align-items: center;
     text-align: center;
 } 
@@ -601,7 +599,21 @@ input:active{
     border: none;
 }
 
-#textoArea{
-    height: 100px;
-    
+.botaoForm{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    overflow: hidden;
+    border: 1px solid;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.botaoForm:hover{
+    background-color: var(--cor-branca);
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+}
+

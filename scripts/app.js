@@ -39,11 +39,11 @@ home.addEventListener('click', function() {
 
 about.addEventListener('click', function() {
 
-  $('section').addClass("animate__bounceOutUp")
+  $('section').addClass("animate__backOutDown")
 
   setTimeout(function(){
 
-  $('section').removeClass("flex").addClass("none").removeClass("animate__bounceOutUp")
+  $('section').removeClass("flex").addClass("none").removeClass("animate__backOutDown")
   containerAbout.classList.remove("none")
   containerAbout.classList.add("flex")
   containerAbout.classList.add("animate__backInDown")
@@ -54,11 +54,11 @@ about.addEventListener('click', function() {
 
 skills.addEventListener('click', function() {
 
-  $('section').addClass("animate__flipOutY")
+  $('section').addClass("animate__backOutDown")
 
   setTimeout(function(){
 
-  $('section').removeClass("flex").addClass("none").removeClass("animate__flipOutY")
+  $('section').removeClass("flex").addClass("none").removeClass("animate__backOutDown")
   containerSkills.classList.remove("none")
   containerSkills.classList.add("flex")
   containerSkills.classList.add("animate__backInDown")
@@ -69,11 +69,11 @@ skills.addEventListener('click', function() {
 
 project.addEventListener('click', function() {
 
-  $('section').addClass("animate__bounceOut")
+  $('section').addClass("animate__backOutDown")
 
   setTimeout(function(){
 
-  $('section').removeClass("flex").addClass("none").removeClass("animate__bounceOut")
+  $('section').removeClass("flex").addClass("none").removeClass("animate__backOutDown")
   containerProject.classList.remove("none")
   containerProject.classList.add("flex")
   containerProject.classList.add("animate__backInDown")
@@ -84,11 +84,11 @@ project.addEventListener('click', function() {
 
 contact.addEventListener('click', function() {
 
-  $('section').addClass("animate__fadeOutDown")
+  $('section').addClass("animate__backOutDown")
 
   setTimeout(function(){
 
-  $('section').removeClass("flex").addClass("none").removeClass("animate__fadeOutDown")
+  $('section').removeClass("flex").addClass("none").removeClass("animate__backOutDown")
   containerContact.classList.remove("none")
   containerContact.classList.add("flex")
   containerContact.classList.add("animate__backInDown")
@@ -102,7 +102,8 @@ contact.addEventListener('click', function() {
 primeiroP.addEventListener('click', function() { 
 
 $(".card-project").addClass("animate__zoomOut")
-
+$("#primeiroP").addClass("selecionado")
+$("#segundoP, #terceiroP, #quartoP, #quintoP").removeClass("selecionado")
 setTimeout(function(){
 
   $(".card-project").removeClass("flex").addClass("none").removeClass("animate__zoomOut")
@@ -115,7 +116,9 @@ setTimeout(function(){
 segundoP.addEventListener('click', function() { 
 
   $(".card-project").addClass("animate__zoomOut")
-  
+  $("#segundoP").addClass("selecionado")
+  $("#primeiroP, #terceiroP, #quartoP, #quintoP").removeClass("selecionado")
+
   setTimeout(function(){
   
     $(".card-project").removeClass("flex").addClass("none").removeClass("animate__zoomOut")
@@ -128,6 +131,8 @@ segundoP.addEventListener('click', function() {
 terceiroP.addEventListener('click', function() { 
 
   $(".card-project").addClass("animate__zoomOut")
+  $("#terceiroP").addClass("selecionado")
+  $("#primeiroP, #segundoP, #quartoP, #quintoP").removeClass("selecionado")
   
   setTimeout(function(){
   
@@ -141,6 +146,8 @@ terceiroP.addEventListener('click', function() {
 quartoP.addEventListener('click', function() { 
 
   $(".card-project").addClass("animate__zoomOut")
+  $("#quartoP").addClass("selecionado")
+  $("#segundoP, #terceiroP, #primeiroP, #quintoP").removeClass("selecionado")
   
   setTimeout(function(){
   
@@ -154,6 +161,8 @@ quartoP.addEventListener('click', function() {
 quintoP.addEventListener('click', function() { 
 
   $(".card-project").addClass("animate__zoomOut")
+  $("#quintoP").addClass("selecionado")
+  $("#segundoP, #terceiroP, #quartoP, #primeiroP").removeClass("selecionado")
   
   setTimeout(function(){
   
@@ -181,6 +190,8 @@ quintoP.addEventListener('click', function() {
       $(".card-detalhes").removeClass("animate__fadeOut").addClass("none")
     
       },1000) })
+
+// PROJETO SELECIONADO 
 
 // SOL E LUA ( CLARO E ESCURO ) ---------------------------------------------------------------------------------------------
 
